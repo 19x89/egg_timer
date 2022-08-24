@@ -4,7 +4,6 @@ import java.awt.*;
 
 public class EggTimerCanvas extends Canvas {
     private EggTimerModel model;
-    private Graphics graphics = getGraphics();
     private Dimension dimension = new Dimension( 320, 320 );
     private Color totalTimeColor = new Color( 255, 0, 0 );
     private Color passedTimeColor = new Color( 0, 255, 0 );
