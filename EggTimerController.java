@@ -1,21 +1,35 @@
 package egg_timer;
 
-public class EggTimerController implements TickListener {
+import java.awt.event.*;
+
+public class EggTimerController implements TickListener, ActionListener {
     private EggTimerModel model;
     private EventBasedTimer timer = new EventBasedTimer();
+    private EggTimerCanvas view;
     
-    public EggTimerController( EggTimerModel model ) {
+    public EggTimerController( EggTimerModel model, EggTimerCanvas view ) {
         this.model = model;
+        this.view = view;
         timer.addTicketListener( this );
-        timer.start();
     }
 
     @Override
     public void tickPerformed() {
         model.increaseElapsedTime();
-        System.out.println( model.getElapsedPart() );
+        view.repaint();
         if( model.getElapsedPart() == 1 ) {
             timer.stop();
         }
+    }
+    
+    @Override
+    public void actionPerformed( ActionEvent e ) {
+        try {
+            Thread.sleep( 1000 );
+        } catch( InterruptedException exc ) {
+            exc.printStackTrace();
+        }
+        timer.start();
+        MVCEggTimerMain.startButton.setEnabled( false );
     }
 }
