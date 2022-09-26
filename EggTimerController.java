@@ -2,6 +2,10 @@ package egg_timer;
 
 import java.awt.event.*;
 
+/*
+Diese Klasse beschreibt die innere Funktionalität des Timers.
+*/
+
 public class EggTimerController implements TickListener, ActionListener {
     private EggTimerModel model;
     private EventBasedTimer timer = new EventBasedTimer();
