@@ -3,6 +3,10 @@ package egg_timer;
 import java.awt.*;
 import java.awt.event.*;
 
+/*
+Die Hauptklasse ist zum Starten des Programms sowie das Erzeugen des Programmfensters.
+*/
+
 public class MVCEggTimerMain {
     protected EggTimerModel eggTimerModel;
     protected EggTimerCanvas eggTimerCanvas;
