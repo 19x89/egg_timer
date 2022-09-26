@@ -1,5 +1,9 @@
 package egg_timer;
 
+/*
+Diese Klasse erzeugt das Datenmodell des Timers.
+*/
+
 public class EggTimerModel {
     // vorgesehene Laufzeit in Sekunden
     private int totalTimeInSeconds;
