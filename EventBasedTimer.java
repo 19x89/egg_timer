@@ -2,6 +2,10 @@ package egg_timer;
 
 import java.util.*;
 
+/*
+Diese Klasse startet das Timer.
+*/
+
 public class EventBasedTimer {
     private Timer internalTimer = new Timer();
     private List<TickListener> listeners = new ArrayList<TickListener>();
