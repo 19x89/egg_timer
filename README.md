@@ -4,4 +4,4 @@ Ein Beispiel von einem grafischen Timer.
 ---
 Das habe ich als Selbstaufgabe in meinem Kurs gemacht.
 
-Zweck: Kenntnisse von Framework AWT und Threads zu überprüfen.
+Zweck: Kenntnisse von Framework AWT, Beobachter und Threads zu überprüfen.
