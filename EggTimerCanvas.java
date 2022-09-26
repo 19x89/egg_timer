@@ -2,6 +2,10 @@ package egg_timer;
 
 import java.awt.*;
 
+/*
+Diese Klasse erzeugt die grafische Darstellung des Timers.
+*/
+
 public class EggTimerCanvas extends Canvas {
     private EggTimerModel model;
     private Dimension dimension = new Dimension( 320, 320 );
